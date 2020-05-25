@@ -1,23 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    color: white;
 }
-
+h1{
+    color: white;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+}
 body{
     background-color: #000000;
+    position: relative;
 }
 
 #shorten-button{
     color: rgb(255, 102, 0);
+    background-color: rgb(32, 32, 250);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+}
+
+#shorten-button:hover{
+    background-color: blue;
+    cursor: pointer;
 }
 
 #copy-button{
-    background-color:#ffa500;
+    background-color:#ffa702;
     color:black;
     font-weight: 200;
     font-size: 20px;
     padding: 8px;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: 'Merienda', cursive;
 }
+
+#copy-button:hover{
+    background-color:#df9100 ;
+    cursor: pointer;
+}
+
+.box1, .box2, .box3{
+    text-align: center;
+    padding: 20px;
+}
+.input, .short, .copy{
+    border: none;
+    border-radius: 8px;
+    
+}
+
+#getlink{
+    margin-top:80px;
+    width: 40%;
+    height: 50px;
+    padding: 5px;
+    justify-content: space-around;
+    -webkit-box-shadow: -5px 7px 11px -6px rgba(73, 72, 72, 0.75);
+    -moz-box-shadow: -5px 7px 11px -6px rgba(71, 71, 71, 0.75);
+    box-shadow: -5px 7px 11px -6px rgba(83, 83, 83, 0.75);
+}
+
+.link{
+    display: none;
+    visibility: hidden;  
+    font-size: 50px;
+    color: rgb(202, 28, 28);
+    
+}
+
+.credits{
+    color: #9c9c9c;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.credits-wrap{
+    text-align: center;
+}
+

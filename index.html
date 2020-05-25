@@ -3,25 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 	<link rel="stylesheet" href="style.css">
-	<title>Odd Tools</title>
+	<title>Ninja Tools</title>
 </head>
 <body>
 	
 	<header class="heading">
-		<h1>URL Shortener</h1>
+		<h1>Ninja's URL Shortener</h1>
 	</header>
 	<div>
-		<div>
-			<input type="text" id="getlink" size="60" placeholder="Paste your Long URL">
+		<div class="box1">
+			<input class="input" type="text" id="getlink" size="60" placeholder="Paste your Long URL">
 		</div>
-		<div>
-			<button onclick="myFunction()" id="shorten-button">Shorten this URL</button>
+		<div class="box2">
+			<button class="short" onclick="myFunction()" id="shorten-button">Shorten this URL</button>
 		</div>
-		<div>
-			<button id="copy-button">Copy link</button>
+		<div class="box3">
+			<button class="copy" id="copy-button" onclick="copyText()">Copy link</button>
 		</div>
 	</div>
+
+	<div class="link">
+
+	</div>
+	<div class="credits-wrap">
+		<div class="credits">
+			Made with <span style="color: red;">&#10084;</span> by Subhash
+		</div>
+	</div>
+	
 	<script src="script.js"></script>
 </body>
 </html>
