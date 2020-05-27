@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
+body {
+    background: url(bg1.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -12,39 +20,43 @@ h1{
     padding: 40px;
     font-size: 50px;
 }
-body{
-    background-color: #000000;
-    position: relative;
-}
 
 #shorten-button{
-    color: rgb(255, 102, 0);
-    background-color: rgb(32, 32, 250);
-    color: #ffffff;
-    padding: 10px;
+    margin-top: 100px;
+    display: inline;
+    border:1px solid rgb(255, 255, 255);
+    color: #fff;
+    padding: 8px;
     font-size: 20px;
     font-family: 'Merienda', cursive;
-}
+    background-color: transparent;
+  }
 
 #shorten-button:hover{
-    background-color: blue;
+    background-color:#5c5b5a56 ;
     cursor: pointer;
+    color: #ffffff;
 }
 
 #copy-button{
-    background-color:#ffa702;
-    color:black;
+    border:1px solid rgb(255, 255, 255);
     font-weight: 200;
     font-size: 20px;
     padding: 8px;
     font-family: 'Merienda', cursive;
+    background-color: transparent;
+    color: #fff;
 }
 
 #copy-button:hover{
-    background-color:#df9100 ;
+    background-color:#5c5b5a56 ;
     cursor: pointer;
+    color: #ffffff;
 }
 
+.short{
+    margin-right: 15px;
+}
 .box1, .box2, .box3{
     text-align: center;
     padding: 20px;
@@ -52,12 +64,15 @@ body{
 .input, .short, .copy{
     border: none;
     border-radius: 8px;
-    
 }
 
-#getlink{
-    margin-top:80px;
-    width: 40%;
+.box2{
+    margin-top:.5px; 
+}
+
+.input{
+    margin-top:60px;
+    width: 75%;
     height: 50px;
     padding: 5px;
     justify-content: space-around;
@@ -84,5 +99,70 @@ body{
 
 .credits-wrap{
     text-align: center;
+}
+
+.slide-top{
+    animation:slide-top .5s cubic-bezier(.39,.575,.565,1.000) both
+}
+ @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Social links credits: codepen https://codepen.io/chancesq/pen/xxwedXB */
+body, .flex-center {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-btn {
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px rgba(253, 253, 253, 0.1);
+	background:transparent;
+	margin: 5px;
+    transition: 1s;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.social-btn span {
+	width: 0px;
+	overflow: hidden;
+	transition: 1s;
+	text-align: center;
+}
+
+.social-btn:hover {
+	width: 150px;
+	border-radius: 5px;
+}
+
+.social-btn:hover span {
+	padding: 2px;
+	width: max-content;
+}
+
+#twitter svg {
+	fill: #1da1f2;
+}
+
+#linkedin svg {
+	fill: #0e76a8;
+}
+
+#github svg{
+    fill: rgb(255, 255, 255);
 }
 
