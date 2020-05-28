@@ -167,3 +167,16 @@ body, .flex-center {
     fill: rgb(255, 255, 255);
 }
 
+.instagram-logo {
+    path {
+      fill: ;
+    }
+
+    circle{
+        fill: #fff;
+    }
+    .logo {
+      fill: rgb(253, 251, 251);
+    }
+
+  }
