@@ -17,9 +17,11 @@ h1{
     color: white;
     font-family: 'Merienda', cursive;
     text-align: center;
-    padding: 40px;
+    padding:0px 40px 10px 40px;
     font-size: 50px;
 }
+
+
 
 #shorten-button{
     margin-top: 100px;
